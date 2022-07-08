@@ -1,0 +1,29 @@
+12:32:50.146375 execve("./hello", ["./hello"], 0x7ffda698e5f8 /* 26 vars */) = 0
+12:32:50.147208 brk(NULL)               = 0x55da7a1a9000
+12:32:50.147348 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:32:50.147473 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+12:32:50.147587 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+12:32:50.147699 fstat(3, {st_mode=S_IFREG|0644, st_size=28552, ...}) = 0
+12:32:50.147806 mmap(NULL, 28552, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fa2dd877000
+12:32:50.147911 close(3)                = 0
+12:32:50.148014 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+12:32:50.148140 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+12:32:50.148279 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\35\2\0\0\0\0\0"..., 832) = 832
+12:32:50.148385 fstat(3, {st_mode=S_IFREG|0755, st_size=2030928, ...}) = 0
+12:32:50.148491 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa2dd875000
+12:32:50.148600 mmap(NULL, 4131552, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fa2dd264000
+12:32:50.148706 mprotect(0x7fa2dd44b000, 2097152, PROT_NONE) = 0
+12:32:50.148811 mmap(0x7fa2dd64b000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e7000) = 0x7fa2dd64b000
+12:32:50.148927 mmap(0x7fa2dd651000, 15072, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fa2dd651000
+12:32:50.149042 close(3)                = 0
+12:32:50.149192 arch_prctl(ARCH_SET_FS, 0x7fa2dd8764c0) = 0
+12:32:50.149350 mprotect(0x7fa2dd64b000, 16384, PROT_READ) = 0
+12:32:50.149461 mprotect(0x55da795ad000, 4096, PROT_READ) = 0
+12:32:50.149700 mprotect(0x7fa2dd87e000, 4096, PROT_READ) = 0
+12:32:50.149937 munmap(0x7fa2dd877000, 28552) = 0
+12:32:50.150118 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+12:32:50.150264 brk(NULL)               = 0x55da7a1a9000
+12:32:50.150471 brk(0x55da7a1ca000)     = 0x55da7a1ca000
+12:32:50.150635 write(1, "hello world\n", 12) = 12
+12:32:50.151086 exit_group(0)           = ?
+12:32:50.151282 +++ exited with 0 +++
